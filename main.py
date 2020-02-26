@@ -16,7 +16,7 @@ def main():
     # Configuration
     #
     #
-    input_path = "test.avi"
+    input_path = 0
     yolo = "./v3t1k/"
     weights_fname='v3t.weights'
     cfg_fname='v3t.cfg'
@@ -60,7 +60,7 @@ def main():
             #
             frame, ok = tracker.draw(frame)
 
-            cv2.imshow('frame',frame)
+        cv2.imshow('frame',frame)
 
         # wait for a keypress on each frame
         if cv2.waitKey(1) & 0xFF == ord('q'):
